@@ -1,0 +1,48 @@
+@import '../variables';
+@import '../common';
+
+.section_open_iis {
+  display: flex;
+  justify-content: center;
+  background-color: $default_blue_bg;
+  &__content {
+    @extend %content;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  // top block
+  &__desc {
+    margin-top: 3.3rem;
+  }
+  // card block
+  &__cards {
+    margin-top: 6rem;
+    flex-basis: 100%;
+    display: flex;
+    .card {
+      padding-top: 0rem;
+      background-color: $default_blue_bg;
+      align-items: flex-start;
+      img {
+        margin-bottom: 4rem;
+      }
+      h4 {
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+      }
+      * {
+        text-align: left;
+      }
+    }
+  }
+  &__card + &__card {
+    margin-left: 6.4rem;
+  }
+  // form 
+  &__form {
+    margin-top: 4.5rem;
+    margin-left: -4rem;
+    display: flex;
+    justify-content: center;
+  }
+}

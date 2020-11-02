@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card__info">
+    @@if (href !== '' && ref_name) {
+      @@include('../../components/InfoButton/index.html', {
+        info: '@@info',
+        href: '@@href',
+        ref_name: '@@ref_name'
+      })
+    }
+  </div>
+  <img src="@@img" alt="money">
+  <div class="card__text">
+    <span>@@span</span>
+    <h4>@@h4</h4>
+    <p>@@p</p>
+  </div>
+  
+</div>

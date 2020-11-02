@@ -1,0 +1,74 @@
+@import '../variables';
+@import '../common';
+
+.section_main_info {
+  display: flex;
+  justify-content: center;
+  background-color: $default_blue_bg;
+  min-height: 94.6rem;
+  &__content {
+    display: flex;
+    width: 128rem;
+    padding: 6rem 4rem 4rem;
+    flex-wrap: wrap;
+  }
+  // top block
+  &__left {
+    padding-top: 2.4rem;
+    flex-basis: 50%;
+  }
+  &__desc {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    margin-top: 4.45rem;
+  }
+  &__btn {
+    @extend %button_purple;
+    height: 5rem;
+    line-height: 5rem;
+    width: 29.9rem;
+    margin-top: 10.5rem;
+  }
+  &__adv {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 29.9rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    margin-top: 1.7rem;
+  }
+  &__right {
+    flex-basis: 50%;
+    padding-left: 1.95rem;
+    &-img {
+      max-width: 58.1rem;
+      height: 100%;
+      max-height: 43.2rem;
+      background-image: url('../../../img/section_main_info/surfing.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  // card block
+  &__cards {
+    margin-top: 8.2rem;
+    flex-basis: 100%;
+    display: flex;
+  }
+  &__card {
+    box-sizing: content-box;
+  }
+  &__card + &__card {
+    margin-left: 4.5rem;
+  }
+  &__info {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+}

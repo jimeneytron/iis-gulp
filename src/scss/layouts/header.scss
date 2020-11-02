@@ -1,0 +1,70 @@
+@import '../variables';
+@import '../common';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 8.2rem;
+  color: $default_grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255,255,255,0.3);
+  padding: 2.8rem 4rem;
+  &__logo {
+    width: 12.4rem;
+    height: 2.6rem;
+    margin-right: 1.2rem;
+  }
+  &__desc {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    margin-right: 2rem;
+    div {
+      display: flex;
+      align-items: center;
+    }
+    div:first-child {
+      line-height: 1.5rem;
+    }
+    div:nth-child(2) {
+      img {
+        margin-left: .7rem;
+      }
+    }
+  }
+  &__line {
+    width: .1rem;
+    height: 2.4rem;
+    background: $default_grey;
+  }
+  &__bcs-logo {
+    width: 13.4rem;
+    height: 3.8rem;
+    margin-left: 1.5rem;
+  }
+  &__feedback {
+    display: flex;
+    margin-left: auto;
+    &-tel {
+      width: 16rem;
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      margin-right: 6rem;
+      img {
+        margin-right: .8rem;
+      }
+    }
+    &-button {
+      display: inline-block;
+      width: 10.9rem;
+      @extend %button_purple;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../variables';
+@import '../common';
+
+.section_get_maximum {
+  display: flex;
+  justify-content: center;
+  &__content {
+    @extend %content;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  // top block
+  &__desc {
+    margin-top: 3.3rem;
+  }
+  &__products {
+    display: flex;
+    margin-top: 12rem;
+  }
+  &__product + &__product {
+    margin-left: 4.5rem;
+  }
+}

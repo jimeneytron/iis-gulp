@@ -1,0 +1,84 @@
+@import '../variables';
+.product {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 37rem;
+  height: 17.9rem;
+  box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: transform .3s;
+  box-sizing: border-box;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: transform .3s;
+  }
+  &:hover {
+    transform: translate(-.5rem, -.5rem);
+    &:after {
+      transform: translate(1rem, 1rem);
+    }
+  }
+  &__header {
+    z-index: 1;
+    width: 100%;
+    height: 10.2rem;
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding: 2rem 2rem 3rem;
+    box-sizing: border-box;
+    img {
+      margin-right: 1.6rem;
+    }
+    &-bcs {
+      background-color: $default_blue_product;
+    }
+    &-gazprom {
+      background-color: $default_cyan_product;
+    }
+    &-yandex {
+      background-color: $default_red_product;
+    }
+  }
+  &__info {
+    z-index: 1;
+    width: 100%;
+    height: 7.7rem;
+    padding: 2rem;
+    display: flex;
+    background-color: $white;
+    box-sizing: border-box;
+    &-item {
+      display: flex;
+      flex-direction: column;
+    }
+    &-item + &-item {
+      margin-left: 4rem;
+    }
+    &-prefix {
+      text-transform: uppercase;
+      font-size: .8rem;
+      line-height: 1rem;
+      letter-spacing: .2rem;
+      color: $default_grey;
+      font-weight: normal;
+      margin-bottom: .4rem;
+    }
+    &-annum, &-term {
+      color: $default_green;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+    &-term {
+      color: $black;
+    }
+  }
+}

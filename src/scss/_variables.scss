@@ -1,0 +1,35 @@
+// GLOBAL SETTINGS
+$page-width: 1200px;
+
+
+// COLORS
+$black: #000;
+$white: #fff;
+$default_grey: #2A2738;
+$default_purple: #482AA4;
+$default_green: #44B35C;
+$default_blue_bg: #DAF4FE;
+$default_blue_product: #3133AF;
+$default_cyan_product: #0079C2;
+$default_red_product: #FF0000;
+
+
+
+// FONTS
+$font-sans: 'GraphikLC', sans-serif;
+$font-serif: Times New Roman;
+$font-mono: Courier;
+
+// OTHER
+$box-shadow: 0 0 3px rgba(0,0,0,0.5);
+
+// BUTTONS
+$button-height:     30px;
+$button-padding:    0 15px;
+
+// MEDA QUERIES
+$bp-4:    "(min-width: 480px)";
+$bp-7:    "(min-width: 768px)";
+$bp-9:    "(min-width: 992px)";
+$bp-12:   "(min-width: 1200px)";
+$bp-pw:   "(max-width:" + $page-width  +")"; // page width + small spacing

@@ -1,0 +1,39 @@
+@import '../variables';
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  width: 37rem;
+  height: 33.4rem;
+  background-color: $white;
+  position: relative;
+  box-sizing: border-box;
+  &__text {
+    text-align: center;
+  }
+  img {
+    margin-bottom: 2rem;
+  }
+  span {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $default_grey;
+    margin-bottom: .2rem;
+    letter-spacing: .2rem;
+  }
+  p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $default_grey;
+    text-align: center;
+  }
+  &__info {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+}
